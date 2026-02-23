@@ -1,0 +1,16 @@
+class count 
+{
+	public static void main(String[] args) 
+	{
+		int n=123; // input
+    String n=123+""; //different types method for creating count 
+		int m=(int)Math.log10(n)+1;// using in bulit function 
+		int o=Integer.toString(n).length();// converting into the string
+		int count=0;
+		while(n>0){
+			n/=10;
+			count++;
+		}
+		System.out.println(count+" " +m + " " + o);
+	}
+}
